@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Master parent theme based off of Theme.MaterialComponents.DayNight.NoActionBar.Bridge -->
+    <style name="Theme.Master" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+    <!-- Template theme that handles edge-to-edge on other styles variants -->
+    <style name="Theme.Edge" parent="Theme.Master" />
+    <!-- Android 12 Splashscreen config -->
+    <style name="Theme.Splash" parent="Theme.Edge" />
+
+    <!-- Base theme -->
+    <style name="Theme.Base" parent="Theme.Splash">
+        <!-- Colors -->
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorAccent">@color/design_default_color_primary</item>
+
+        <item name="colorPrimary">?attr/colorAccent</item>
+        <item name="colorOnPrimary">?attr/colorSurface</item>
+
+        <item name="colorSecondary">?attr/colorAccent</item>
+        <item name="colorOnSecondary">?attr/colorSurface</item>
+
+        <item name="colorControlNormal">@color/control</item>
+        <item name="colorControlHighlight">@color/overlay_selection</item>
+        <item name="colorControlActivated">?attr/colorAccent</item>
+
+        <!-- Appearance -->
+        <item name="android:windowBackground">?attr/colorSurface</item>
+        <item name="android:colorBackground">?attr/colorSurface</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textCursorDrawable">@drawable/ui_cursor</item>
+
+        <item name="cornerRadius">0dp</item>
+
+        <!-- System-specific magic -->
+        <item name="android:scrollbars">none</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="popupMenuBackground">@drawable/ui_popup_bg</item>
+
+        <!-- Material stuff -->
+        <item name="textInputStyle">@null</item>
+        <item name="materialAlertDialogTheme">@style/Theme.CustomDialog</item>
+    </style>
+
+    <!-- The basic black theme derived in all black accents. -->
+    <style name="Theme.Base.Black" parent="Theme.Base">
+        <item name="colorSurface">@android:color/black</item>
+        <item name="materialAlertDialogTheme">@style/Theme.CustomDialog.Black</item>
+    </style>
+
+    <!--
+    Theming widgets is technically possible below Android 12, but I *really* don't care enough
+    to bother with it.
+    -->
+    <style name="Theme.Widget" parent="@style/Theme.Blue" />
+</resources>

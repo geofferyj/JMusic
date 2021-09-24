@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_discover">
+
+    <fragment
+        android:id="@+id/navigation_playlists"
+        android:name="com.geofferyj.jmusic.ui.fragments.playlists.PlaylistsFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_playlists" />
+
+    <fragment
+        android:id="@+id/navigation_feed"
+        android:name="com.geofferyj.jmusic.ui.fragments.feed.FeedFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_feed" />
+
+    <fragment
+        android:id="@+id/navigation_discover"
+        android:name="com.geofferyj.jmusic.ui.fragments.discover.DiscoverFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_discover" />
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.geofferyj.jmusic.ui.fragments.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.geofferyj.jmusic.ui.fragments.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/albumUploadFragment"
+        android:name="com.geofferyj.jmusic.ui.fragments.profile.uploads.album.AlbumUploadFragment"
+        android:label="AlbumUploadFragment" />
+    <fragment
+        android:id="@+id/singleUploadFragment"
+        android:name="com.geofferyj.jmusic.ui.fragments.profile.uploads.single.SingleUploadFragment"
+        android:label="fragment_single_upload"
+        tools:layout="@layout/fragment_single_upload" />
+    <include app:graph="@navigation/auth_nav" />
+    <include app:graph="@navigation/payment_nav_graph" />
+</navigation>

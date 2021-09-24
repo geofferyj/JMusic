@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.geofferyj.jmusic.utils.custom_views.MultiSheetView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="androidx.coordinatorlayout.widget.CoordinatorLayout">
+
+    <FrameLayout
+        android:id="@+id/mainContainer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/sheet11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_peekHeight="64dp"
+        app:layout_behavior=".utils.custom_views.CustomBottomSheetBehavior"
+        tools:ignore="MissingPrefix">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/sheet1PeekView1"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="#2196F3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:text="Sheet 1 Peek"
+                    android:textColor="#fff"
+                    android:textSize="24sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/sheet1Container1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="64dp" />
+
+        </LinearLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/sheet1Coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/sheet21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:behavior_peekHeight="64dp"
+                app:layout_behavior=".utils.custom_views.CustomBottomSheetBehavior">
+
+                <FrameLayout
+                    android:id="@+id/sheet2PeekView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:background="#009688">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:text="Sheet 2 Peek"
+                        android:textColor="#fff"
+                        android:textSize="24sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/sheet2Container1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </FrameLayout>
+</com.geofferyj.jmusic.utils.custom_views.MultiSheetView>

@@ -1,0 +1,18 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+
+    }
+}
+
+//allprojects {
+//    repositories {
+//        maven { url 'https://jitpack.io' }
+//    }
+//}
+
+rootProject.name = "JMusic"
+include ':app'

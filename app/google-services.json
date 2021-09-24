@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "496981394556",
+    "project_id": "jmusic-27935",
+    "storage_bucket": "jmusic-27935.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496981394556:android:e8687ac9baaa4a21a975f9",
+        "android_client_info": {
+          "package_name": "com.geofferyj.jmusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496981394556-blvvsm207p9u7s79ar7rpdnfa147ariq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDExuij2pfc455nDtChE7n4-yVk7-bw0hY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496981394556-blvvsm207p9u7s79ar7rpdnfa147ariq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

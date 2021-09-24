@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="song"
+            type="com.geofferyj.jmusic.data.models.Song" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@{song.albumArt}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/artist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@{song.artist}"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                tools:text="@tools:sample/lorem" />
+
+            <TextView
+                android:id="@+id/song_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@{song.title}"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/artist_name"
+                tools:text="@tools:sample/lorem" />
+
+            <TextView
+                android:id="@+id/featuring_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Feat."
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="@{song.featuring}"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/song_title" />
+
+            <TextView
+                android:id="@+id/featuring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@{song.featuring}"
+                android:textColor="@color/yellow"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/featuring_txt"
+                app:layout_constraintStart_toEndOf="@+id/featuring_txt"
+                app:layout_constraintTop_toTopOf="@+id/featuring_txt"
+                tools:text="@tools:sample/lorem" />
+
+
+            <ImageView
+                android:id="@+id/plays"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/play_icon"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/featuring_txt"
+                app:tint="@color/yellow" />
+
+            <TextView
+                android:id="@+id/plays_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@{String.valueOf(song.stats.plays)}"
+                app:layout_constraintBottom_toBottomOf="@+id/plays"
+                app:layout_constraintStart_toEndOf="@+id/plays"
+                app:layout_constraintTop_toTopOf="@+id/plays"
+                tools:text="543k" />
+
+            <ImageView
+                android:id="@+id/favs"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/favorite_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/plays_txt"
+                app:layout_constraintStart_toEndOf="@+id/plays_txt"
+                app:layout_constraintTop_toTopOf="@+id/plays_txt"
+                app:tint="@color/yellow" />
+
+            <TextView
+                android:id="@+id/favs_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@{String.valueOf(song.stats.favorites)}"
+                app:layout_constraintBottom_toBottomOf="@+id/favs"
+                app:layout_constraintStart_toEndOf="@+id/favs"
+                app:layout_constraintTop_toTopOf="@+id/favs"
+                tools:text="543k" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

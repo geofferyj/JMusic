@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="reddish_black">#221C1C</color>
+    <color name="yellowish_black">#221406</color>
+    <color name="yellow">#F99B0F</color>
+    <color name="yellow_a25">#40F99B0F</color>
+    <color name="mainBackground">#112e40</color>
+    <color name="playerBackground">#fefbe3</color>
+    <color name="textDefault">#4e4c62</color>
+    <color name="textOrange">#ff7775</color>
+    <color name="buttonBackground">#4e4c62</color>
+    <color name="nav_background">#0097A7</color>
+    <color name="nav_selected">#0083ff</color>
+    <color name="dark_blue">#393F4F</color>
+    <color name="light_grey">#DADCE1</color>
+    <color name="dark_grey">#4D4D4D</color>
+    <color name="text_color_dark">#212525</color>
+
+    <color name="surface">#fafafa</color>
+    <color name="control">#202020</color>
+    <color name="nav_bar">#01fafafa</color>
+
+    <!--
+    Base color set derived from Music Player GO.
+    https://github.com/enricocid/Music-Player-GO
+    -->
+    <color name="red">#f44336</color>
+    <color name="pink">#e91e63</color>
+    <color name="purple">#9c27b0</color>
+    <color name="deep_purple">#673ab7</color>
+    <color name="indigo">#3f51b5</color>
+    <color name="blue">#2196f3</color>
+    <color name="light_blue">#03a9f4</color>
+    <color name="cyan">#00bcd4</color>
+    <color name="teal">#009688</color>
+    <color name="green">#4caf50</color>
+    <color name="light_green">#8bc34a</color>
+    <color name="lime">#B7C534</color>
+    <color name="light_yellow">#E4AC00</color>
+    <color name="orange">#E68A01</color>
+    <color name="deep_orange">#ff5722</color>
+    <color name="brown">#795548</color>
+    <color name="grey">#808080</color>
+    <color name="blue_grey">#607d8b</color>
+
+
+</resources>

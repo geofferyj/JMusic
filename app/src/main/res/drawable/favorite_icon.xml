@@ -1,0 +1,13 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:autoMirrored="true"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <item android:drawable="@drawable/favorite_outlined"
+        android:state_activated="false"/>
+
+    <item android:state_activated="true"
+        android:drawable="@drawable/favorite_filled"/>
+</selector>

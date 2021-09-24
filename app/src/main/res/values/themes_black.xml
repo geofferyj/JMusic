@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    All the base themes/accents.
+    -->
+    <style name="Theme.Red.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/red</item>
+    </style>
+
+    <style name="Theme.Pink.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/pink</item>
+    </style>
+
+    <style name="Theme.Purple.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/purple</item>
+    </style>
+
+    <style name="Theme.DeepPurple.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/deep_purple</item>
+    </style>
+
+    <style name="Theme.Indigo.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/indigo</item>
+    </style>
+
+    <style name="Theme.Blue.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/blue</item>
+    </style>
+
+    <style name="Theme.LightBlue.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/light_blue</item>
+    </style>
+
+    <style name="Theme.Cyan.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/cyan</item>
+    </style>
+
+    <style name="Theme.Teal.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/teal</item>
+    </style>
+
+    <style name="Theme.Green.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/green</item>
+    </style>
+
+    <style name="Theme.LightGreen.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/light_green</item>
+    </style>
+
+    <style name="Theme.Lime.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/lime</item>
+    </style>
+
+    <style name="Theme.Yellow.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/yellow</item>
+    </style>
+
+    <style name="Theme.Orange.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/orange</item>
+    </style>
+
+    <style name="Theme.DeepOrange.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/deep_orange</item>
+    </style>
+
+    <style name="Theme.Brown.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/brown</item>
+    </style>
+
+    <style name="Theme.Grey.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/grey</item>
+    </style>
+
+    <style name="Theme.BlueGrey.Black" parent="Theme.Base.Black">
+        <item name="colorAccent">@color/blue_grey</item>
+    </style>
+</resources>
